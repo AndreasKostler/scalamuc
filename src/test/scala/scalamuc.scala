@@ -38,6 +38,9 @@ class CoproductTest extends JUnitSuite {
   /*
   @Test
   def testGCD {
+    import NatOps._
+    import shapeless.nat._
+
     implicitly[GCD.Aux[_10, _5, _5]]
     implicitly[GCD.Aux[_9, _6, _3]]
   }
