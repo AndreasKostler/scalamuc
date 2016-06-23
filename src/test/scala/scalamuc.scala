@@ -10,7 +10,6 @@ class CoproductTest extends JUnitSuite {
 
   def assertTypedEquals[A](expected: A, actual: A): Unit = assertEquals(expected, actual)
 
-  /*
   @Test
   def testInject {
     val foo1 = Coproduct[ISB](23)
@@ -21,9 +20,7 @@ class CoproductTest extends JUnitSuite {
     assertTypedEquals(Inr(Inl("foo")), foo2)
     assertTypedEquals(Inr(Inr(Inl(true))), foo3)
   }
-   */
 
-  /*
   @Test
   def testMap {
     type C = Int :+: String :+: CNil
@@ -33,9 +30,8 @@ class CoproductTest extends JUnitSuite {
     assertTypedEquals(Inl(43), foo1 map addOne)
     assertTypedEquals(Inr(Inl("foo1")), foo2 map addOne)
   }
-   */
 
-  /*
+
   @Test
   def testGCD {
     import NatOps._
@@ -44,6 +40,5 @@ class CoproductTest extends JUnitSuite {
     implicitly[GCD.Aux[_10, _5, _5]]
     implicitly[GCD.Aux[_9, _6, _3]]
   }
-   */
 
 }

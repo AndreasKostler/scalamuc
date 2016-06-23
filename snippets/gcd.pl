@@ -1,4 +1,5 @@
 gcd(X, X, X).
+
 gcd(X, Y, Out) :-
     X < Y,
     Z is Y - X,
