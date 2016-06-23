@@ -1,6 +1,8 @@
 package object scalamuc {
 
+  import CoproductOps._
+
   implicit class CoproductSyntax[C <: Coproduct](c: C) {
-    // map
+    def map[P <: Poly](p: P)(implicit mapper: Mapper[P, C]) = mapper(c)
   }
 }
